@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.3](https://github.com/cambusaHQ/cli/compare/0.9.2...0.9.3) (2024-09-22)
+
+
+### Bug Fixes
+
+* **cambusa.js:** downgrade @cambusa/core to ^0.9.1 for compatibility ([c55b44c](https://github.com/cambusaHQ/cli/commit/c55b44c8f2566d6ea82001593f91c793b7703f5d))
+
 ## [0.9.2](https://github.com/cambusaHQ/cli/compare/0.9.1...0.9.2) (2024-09-22)
 
 
