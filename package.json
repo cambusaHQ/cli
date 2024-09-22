@@ -5,6 +5,10 @@
   "bin": {
     "cambusa": "bin/cambusa.js"
   },
+  "files": [
+    "bin",
+    "template"
+  ],
   "type": "module",
   "module": "app.js",
   "engines": {
