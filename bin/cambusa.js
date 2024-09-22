@@ -7,11 +7,6 @@ import { createRequire } from 'module';
 import readline from 'readline';
 import { program } from 'commander';
 import { $ } from 'bun';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 
 const require = createRequire(import.meta.url);
 const { version } = require('../package.json');
@@ -550,8 +545,32 @@ program
     }
 
     fs.mkdirSync(targetDir);
-    const templateDir = path.join(__dirname, '..', 'template');
-    fs.cpSync(templateDir, targetDir, { recursive: true });
+
+    // Resolve the template directory path relative to the installed package
+    let templateDir;
+    try {
+      const packagePath = require.resolve('@cambusa/cli/package.json');
+      templateDir = path.join(path.dirname(packagePath), 'template');
+    } catch (error) {
+      console.error('Error finding @cambusa/cli package:', error.message);
+      process.exit(1);
+    }
+
+    console.log(`Template directory: ${templateDir}`);
+
+    if (!fs.existsSync(templateDir)) {
+      console.error(`Error: Template directory not found at ${templateDir}`);
+      console.error('Please ensure you have installed @cambusa/cli correctly.');
+      process.exit(1);
+    }
+
+    try {
+      fs.cpSync(templateDir, targetDir, { recursive: true });
+      console.log(`Successfully copied template to ${targetDir}`);
+    } catch (error) {
+      console.error('Error copying template files:', error.message);
+      process.exit(1);
+    }
 
     // Generate package.json
     const packageJson = {
@@ -561,10 +580,14 @@ program
       type: 'module',
       scripts: {
         start: 'cambusa lift',
-        dev: 'cambusa lift --watch',
+        dev: 'cambusa lift',
+        test: 'bun test',
       },
       dependencies: {
-        '@cambusa/core': '^0.9.0',
+        '@cambusa/core': '^1.0.0', // Replace with the actual version
+      },
+      devDependencies: {
+        bun: '^1.0.0', // Replace with the actual version
       },
     };
 
