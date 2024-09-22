@@ -553,11 +553,31 @@ program
     const templateDir = path.join(__dirname, '..', 'template');
     fs.cpSync(templateDir, targetDir, { recursive: true });
 
+    // Generate package.json
+    const packageJson = {
+      name: projectName,
+      version: '0.1.0',
+      private: true,
+      type: 'module',
+      scripts: {
+        start: 'cambusa lift',
+        dev: 'cambusa lift --watch',
+      },
+      dependencies: {
+        '@cambusa/core': '^0.9.0',
+      },
+    };
+
+    fs.writeFileSync(
+      path.join(targetDir, 'package.json'),
+      JSON.stringify(packageJson, null, 2)
+    );
+
     console.log(`Cambusa project initialized in '${projectName}' directory.`);
     console.log('To get started:');
     console.log(`  cd ${projectName}`);
-    console.log('  npm install');
-    console.log('  cambusa lift');
+    console.log('  bun install');
+    console.log('  bun run dev');
   });
 
 // Parse command line arguments
