@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.4](https://github.com/cambusaHQ/cli/compare/0.9.3...0.9.4) (2024-09-22)
+
+
+### Features
+
+* **cambusa.js:** add @cambusa/cli as a devDependency to ensure compatibility with the current version ([8d8184c](https://github.com/cambusaHQ/cli/commit/8d8184cb9234dd349a09476474f134b7ec5be4c7))
+
 ## [0.9.3](https://github.com/cambusaHQ/cli/compare/0.9.2...0.9.3) (2024-09-22)
 
 
