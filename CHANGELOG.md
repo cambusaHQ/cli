@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.2](https://github.com/cambusaHQ/cli/compare/0.9.1...0.9.2) (2024-09-22)
+
+
+### Code Refactoring
+
+* **cambusa.js:** remove unused __dirname and __filename definitions ([319ba88](https://github.com/cambusaHQ/cli/commit/319ba8892cabe44421624371d80e7a748e83e76f))
+
 ## [0.9.1](https://github.com/cambusaHQ/cli/compare/0.9.0...0.9.1) (2024-09-22)
 
 
