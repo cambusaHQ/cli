@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.1](https://github.com/cambusaHQ/cli/compare/0.9.0...0.9.1) (2024-09-22)
+
+
+### Features
+
+* add "files" section in package.json and introduce .editorconfig and .gitignore templates for consistent coding style and ignoring unnecessary files ([0f574e7](https://github.com/cambusaHQ/cli/commit/0f574e73f9ba78af77106426d38961456057055a))
+
 ## 0.9.0 (2024-09-22)
 
 
