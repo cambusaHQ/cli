@@ -584,10 +584,10 @@ program
         test: 'bun test',
       },
       dependencies: {
-        '@cambusa/core': '^1.0.0', // Replace with the actual version
+        '@cambusa/core': '^0.9.1',
       },
       devDependencies: {
-        bun: '^1.0.0', // Replace with the actual version
+        bun: '>= 1.1.28',
       },
     };
 
