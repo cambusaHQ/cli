@@ -590,10 +590,6 @@ program
         bun: '>= 1.1.28',
         '@cambusa/cli': `^${version}`,
       },
-      peerDependencies: {
-        pino: '^9.4.0',
-        elysia: 'latest',
-      },
     };
 
     fs.writeFileSync(
