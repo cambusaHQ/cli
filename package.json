@@ -41,5 +41,10 @@
       "eslint --fix",
       "prettier --write"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cambusaHQ/cli.git"
+  },
+  "homepage": "https://github.com/cambusaHQ/cli"
 }
