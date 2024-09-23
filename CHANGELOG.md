@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.9.8](https://github.com/cambusaHQ/cli/compare/0.9.7...0.9.8) (2024-09-23)
+
+
+### Features
+
+* **package.json:** add repository and homepage URLs for better project visibility and access ([0391611](https://github.com/cambusaHQ/cli/commit/0391611f306ac78d6a41dc27155f10c7c1bdd1e6))
+
+
+### Chores
+
+* add keywords ([f100aba](https://github.com/cambusaHQ/cli/commit/f100abace2b426874ed9eed8a9f17749c409ae67))
+
 ## [0.9.7](https://github.com/cambusaHQ/cli/compare/0.9.6...0.9.7) (2024-09-23)
 
 
