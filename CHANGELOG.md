@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.7](https://github.com/cambusaHQ/cli/compare/0.9.6...0.9.7) (2024-09-23)
+
+
+### Features
+
+* **cambusa.js:** remove pino and elysia from peerDependencies to simplify package management ([2d7a8a6](https://github.com/cambusaHQ/cli/commit/2d7a8a6e487198e9d89fd4d38b1b105aed5f43cd))
+
 ## [0.9.6](https://github.com/cambusaHQ/cli/compare/0.9.5...0.9.6) (2024-09-23)
 
 
