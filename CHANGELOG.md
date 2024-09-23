@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.6](https://github.com/cambusaHQ/cli/compare/0.9.5...0.9.6) (2024-09-23)
+
+
+### Code Refactoring
+
+* **jsconfig.json:** simplify paths configuration by removing all aliases except "@lib/*" to streamline project structure and reduce complexity ([b416bec](https://github.com/cambusaHQ/cli/commit/b416bec944a75ade2d43b456f6e12c95fb731afd))
+
 ## [0.9.5](https://github.com/cambusaHQ/cli/compare/0.9.4...0.9.5) (2024-09-23)
 
 
