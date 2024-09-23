@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.5](https://github.com/cambusaHQ/cli/compare/0.9.4...0.9.5) (2024-09-23)
+
+
+### Features
+
+* add peerDependencies to package.json and create jsconfig.json for path aliases ([09d33ed](https://github.com/cambusaHQ/cli/commit/09d33ed67335b8914de59bbee55e423392513314))
+
 ## [0.9.4](https://github.com/cambusaHQ/cli/compare/0.9.3...0.9.4) (2024-09-22)
 
 
