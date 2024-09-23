@@ -46,5 +46,16 @@
     "type": "git",
     "url": "https://github.com/cambusaHQ/cli.git"
   },
-  "homepage": "https://github.com/cambusaHQ/cli"
+  "homepage": "https://github.com/cambusaHQ/cli",
+  "keywords": [
+    "cambusa",
+    "cli",
+    "bun",
+    "tooling",
+    "development-tools",
+    "framework",
+    "rest-api",
+    "websockets",
+    "template"
+  ]
 }
